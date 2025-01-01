@@ -53,7 +53,7 @@
     "spark-md5": "^3.0.2",
     "use-debounce": "^9.0.4",
     "zustand": "^4.3.8",
-    "rt-client": "https://github.com/Azure-Samples/aoai-realtime-audio-sdk/releases/download/js%2Fv0.5.0/rt-client-0.5.0.tgz"
+    "rt-client": "^0.5.1"
   },
   "devDependencies": {
     "@tauri-apps/api": "^1.6.0",
@@ -85,8 +85,7 @@
     "tsx": "^4.16.0",
     "typescript": "5.2.2",
     "watch": "^1.0.2",
-    "webpack": "^5.88.1",
-    "webpack-node-externals": "^3.0.0"
+    "webpack": "^5.88.1"
   },
   "resolutions": {
     "lint-staged/yaml": "^2.2.2"

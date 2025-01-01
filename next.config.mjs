@@ -1,5 +1,4 @@
 import webpack from "webpack";
-import nodeExternals from "webpack-node-externals";
 
 const mode = process.env.BUILD_MODE ?? "standalone";
 console.log("[Next] build mode", mode);
@@ -107,12 +106,4 @@ if (mode !== "export") {
   };
 }
 
-export default {
-    ...nextConfig,
-    webpack: (config, { isServer }) => {
-        if (!isServer) {
-            config.externals = [nodeExternals()];
-        }
-        return config;
-    }
-};
+export default nextConfig;
